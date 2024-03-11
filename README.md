@@ -12,4 +12,4 @@
   canva link [public/ubu]
 
 ## video: 
-  link [public/ubu]
+  link [public/ubu]git config --global user.email
