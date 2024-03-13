@@ -1,4 +1,5 @@
 import pygame
+from button import Button
 import os
 pygame.font.init()
 pygame.mixer.init()
@@ -41,6 +42,7 @@ RED_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(
 
 SPACE = pygame.transform.scale(pygame.image.load(
     os.path.join('Assets', 'y2.jpg')), (WIDTH, HEIGHT))
+    
 
 
 def draw_window(red, yellow, red_bullets, yellow_bullets, red_health, yellow_health):
@@ -138,21 +140,21 @@ def main():
                     bullet = pygame.Rect(
                         yellow.x + yellow.width, yellow.y + yellow.height//2 - 2, 10, 5)
                     yellow_bullets.append(bullet)
-                    #BULLET_FIRE_SOUND.play()
+                    
 
                 if event.key == pygame.K_RCTRL and len(red_bullets) < MAX_BULLETS:
                     bullet = pygame.Rect(
                         red.x, red.y + red.height//2 - 2, 10, 5)
                     red_bullets.append(bullet)
-                    #BULLET_FIRE_SOUND.play()
+                   
 
             if event.type == RED_HIT:
                 red_health -= 1
-                #BULLET_HIT_SOUND.play()
+             
 
             if event.type == YELLOW_HIT:
                 yellow_health -= 1
-                #BULLET_HIT_SOUND.play()
+                
 
         winner_text = ""
         if red_health <= 0:
@@ -175,6 +177,7 @@ def main():
                     red_health, yellow_health)
 
     main()
+
 
 
 if __name__ == "__main__":
