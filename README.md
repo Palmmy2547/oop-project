@@ -9,7 +9,7 @@
 ## application description: รายละเอียดนะ
 
 ## presentation: 
-  canva link [public/ubu]
+  canva link [https://www.canva.com/design/DAF_Ll9-eyg/YIJWo34QCdO2e-xqsu2Tew/edit?utm_content=DAF_Ll9-eyg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton]
 
 ## video: 
-  link [public/ubu]git config --global user.email
+  link [https://drive.google.com/drive/folders/11w9YTNvvUqFqzMpcbsT6NgYD_A6wpIDv]
